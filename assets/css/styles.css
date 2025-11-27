@@ -33,5 +33,5 @@ body {
 
 .container-blur-black {
   backdrop-filter: blur(50px);
-  background-color: oklab(0% 0 0 / 0.775);
+  background-color: rgba(0, 0, 0, 0.85);
 }
