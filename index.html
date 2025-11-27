@@ -14,30 +14,92 @@
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
   <body data-bs-theme="dark" class="bg-dark-subtle">
-    <main class="d-flex justify-content-center align-items-center vh-100">
+    <main class="d-sm-flex justify-content-center align-items-center vh-100">
       <!-- Main container -->
-      <div class="px-5 py-5 my-5 text-center rounded-5 bg-black shadow-lg border pb-3">
-        <img
-          class="d-block mx-auto mb-2 rounded-circle"
-          src="./assets/img/martinfll-pfp.png"
-          alt="Foto de perfil de MartinFLL"
-          height="128"
-          style="
-            user-drag: none;
-            -webkit-user-drag: none;
-            user-select: none;
-            -moz-user-select: none;
-            -webkit-user-select: none;
-            -ms-user-select: none;
-          "
-        />
-        <h1 class="fw-bold mb-3">MartinFLL</h1>
-        <div class="col-lg-6 mx-auto">
-          <p class="lead visually-hidden">
-            Aquí va la descripción si es que algún día llego a poner una.
-          </p>
+      <div
+        class="px-4 py-3 my-5 text-center rounded-5 bg-black shadow-lg border"
+      >
+        <!-- Header -->
+        <nav class="d-flex justify-content-end">
+          <!-- Dropdown -->
+          <div class="dropdown">
+            <button
+              type="button"
+              class="btn"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                class="bi bi-three-dots"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"
+                />
+              </svg>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-start">
+              <li>
+                <a
+                  class="dropdown-item icon-link"
+                  href="https://github.com/MartinFLL/cl"
+                  ><img
+                    src="./assets/svg/github-142-svgrepo-com.svg"
+                    alt="GitHub Logo"
+                    class="mx-1"
+                    height="15px"
+                  />Código fuente de esta página</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item disabled" href="/credits/">Créditos</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- Container Perfil -->
+        <section class="justify-content-center">
+          <img
+            class="d-block mx-auto mb-2 rounded-circle disable-image-drag"
+            src="./assets/img/martinfll-pfp.png"
+            alt="Foto de perfil de MartinFLL"
+            height="128"
+          />
+          <h1
+            class="fw-bold mb-0 d-flex align-items-center justify-content-center"
+          >
+            MartinFLL
+            <img
+              src="./assets/svg/verified-nerd-badge.svg"
+              alt="Verified Badge"
+              height="35px"
+              class="disable-image-drag ms-1"
+            />
+          </h1>
+
+          <!-- Container Ubicación -->
+          <div
+            class="d-flex container text-center justify-content-center mb-2"
+            id="location"
+          >
+            <img
+              src="./assets/svg/location-pin-svgrepo-com.svg"
+              alt="Pin de Ubicación"
+              height="16x"
+              class="me-1 align-self-center"
+            />
+            <span class="lead">Santiago, Chile</span>
+          </div>
+        </section>
+
+        <!-- Container iconos redes sociales -->
+        <div class="col-lg-6 mx-auto container">
           <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <!-- <p class="d-block d-sm-none">TEST</p> -->
             <!-- Instagram -->
             <a
               href="https://www.instagram.com/martinfllll"
@@ -48,8 +110,9 @@
                 src="./assets/svg/instagram-167-svgrepo-com.svg"
                 alt="Instagram Logo"
                 height="50px"
-                class="m-2 invert-color"
-            /><span class="h2 d-sm-none">Instagram</span></a>
+                class="m-2"
+              /><span class="h2 d-sm-none">Instagram</span></a
+            >
 
             <!-- Steam -->
             <a
@@ -61,8 +124,9 @@
                 src="./assets/svg/steam-svgrepo-com.svg"
                 alt="Steam Logo"
                 height="50px"
-                class="m-2 invert-color"
-            /><span class="h2 d-sm-none">Steam</span></a>
+                class="m-2"
+              /><span class="h2 d-sm-none">Steam</span></a
+            >
 
             <!-- YouTube -->
             <a
@@ -74,8 +138,9 @@
                 src="./assets/svg/youtube-168-svgrepo-com.svg"
                 alt="YouTube Logo"
                 height="50px"
-                class="m-2 invert-color"
-            /><span class="h2 d-sm-none">YouTube</span></a>
+                class="m-2"
+              /><span class="h2 d-sm-none">YouTube</span></a
+            >
 
             <!-- TikTok -->
             <a
@@ -87,32 +152,40 @@
                 src="./assets/svg/tiktok-svgrepo-com.svg"
                 alt="TikTok Logo"
                 height="50px"
-                class="m-2 invert-color"
-            /><span class="h2 d-sm-none">TikTok</span></a>
+                class="m-2"
+              /><span class="h2 d-sm-none">TikTok</span></a
+            >
 
             <!-- E-mail -->
-            <a href="mailto:contacto@martinfll.cl" class="zoom link-underline-opacity-0 link-body-emphasis icon-link">
+            <a
+              href="mailto:contacto@martinfll.cl"
+              class="zoom link-underline-opacity-0 link-body-emphasis icon-link"
+            >
               <img
                 src="./assets/svg/email-svgrepo-com.svg"
                 alt="E-mail Icon"
                 height="50px"
-                class="m-2 invert-color"
-            /><span class="h2 d-sm-none">Correo</span></a>
+                class="m-2"
+              /><span class="h2 d-sm-none">Correo</span></a
+            >
           </div>
         </div>
-        <footer class="pt-3 mt-">
+
+        <!-- Footer -->
+        <footer class="pt-3">
           <ul
             class="nav justify-content-sm-end justify-content-center border-top"
           >
+            <!-- Link GitHub con icono -->
             <li class="nav-item lead">
               <a
                 href="https://github.com/MartinFLL/cl"
-                class="nav-link icon-link px-2 link-body-emphasis"
+                class="nav-link icon-link px-2 link-body-emphasis mt-1"
                 target="_blank"
                 ><img
                   src="./assets/svg/github-142-svgrepo-com.svg"
                   alt="GitHub Logo"
-                  class="invert-color me-1"
+                  class="me-1"
                   height="21px"
                 />GitHub</a
               >

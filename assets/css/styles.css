@@ -4,10 +4,6 @@
   margin: 0px;
 } */
 
-.invert-color {
-  filter: invert();
-}
-
 /* https://www.w3schools.com/howto/howto_css_zoom_hover.asp */
 .zoom {
   transition: transform 0.2s; /* Animation */
@@ -21,9 +17,16 @@
 }
 
 body {
-filter: blur();
   background-image: url(../img/backgrounds/frostnite-background.webp);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+}
+
+.disable-image-drag {
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
