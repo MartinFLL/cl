@@ -30,3 +30,8 @@ body {
   -webkit-user-select: none;
   -ms-user-select: none;
 }
+
+.container-blur-black {
+  backdrop-filter: blur(50px);
+  background-color: oklab(0% 0 0 / 0.775);
+}

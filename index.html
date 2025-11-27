@@ -16,12 +16,12 @@
   <body data-bs-theme="dark" class="bg-dark-subtle">
     <main class="d-sm-flex justify-content-center align-items-center vh-100">
       <!-- Main container -->
-      <div
-        class="px-4 py-3 my-5 text-center rounded-5 bg-black shadow-lg border"
-      >
+      <div class="px-4 py-3 text-center rounded-5 shadow-lg border container-blur-black">
         <!-- Header -->
         <nav class="d-flex justify-content-end">
-          <!-- Dropdown -->
+
+
+          <!-- Dropdown Top Right -->
           <div class="dropdown">
             <button
               type="button"
@@ -54,9 +54,6 @@
                     height="15px"
                   />Código fuente de esta página</a
                 >
-              </li>
-              <li>
-                <a class="dropdown-item disabled" href="/credits/">Créditos</a>
               </li>
             </ul>
           </div>
@@ -102,7 +99,7 @@
         </section>
 
         <!-- Container iconos redes sociales -->
-        <div class="col-lg-6 mx-auto container">
+        <div class="col-lg-6 mx-auto container d-none d-sm-block">
           <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
             <!-- Instagram -->
             <a
@@ -115,8 +112,7 @@
                 alt="Instagram Logo"
                 height="50px"
                 class="m-2"
-              /><span class="h2 d-sm-none">Instagram</span></a
-            >
+            /></a>
 
             <!-- Steam -->
             <a
@@ -129,8 +125,7 @@
                 alt="Steam Logo"
                 height="50px"
                 class="m-2"
-              /><span class="h2 d-sm-none">Steam</span></a
-            >
+            /></a>
 
             <!-- YouTube -->
             <a
@@ -143,8 +138,7 @@
                 alt="YouTube Logo"
                 height="50px"
                 class="m-2"
-              /><span class="h2 d-sm-none">YouTube</span></a
-            >
+            /></a>
 
             <!-- TikTok -->
             <a
@@ -157,8 +151,7 @@
                 alt="TikTok Logo"
                 height="50px"
                 class="m-2"
-              /><span class="h2 d-sm-none">TikTok</span></a
-            >
+            /></a>
 
             <!-- E-mail -->
             <a
@@ -170,9 +163,84 @@
                 alt="E-mail Icon"
                 height="50px"
                 class="m-2"
-              /><span class="h2 d-sm-none">Correo</span></a
-            >
+            /></a>
           </div>
+        </div>
+
+        <!-- Container iconos redes sociales VERSIÓN CELULAR (Siento que la implementación ta ahí nomás...) (Retiro lo dicho, gracias ChatGPT...) -->
+        <div class="d-grid d-sm-none gap-2 row mt-4">
+          <!-- Instagram -->
+          <a
+            href="https://www.instagram.com/martinfllll"
+            class="btn border rounded-3 d-flex align-items-center position-relative col p-3 link-body-emphasis"
+            target="_blank"
+            role="button"
+          >
+            <img
+              src="./assets/svg/instagram-167-svgrepo-com.svg"
+              alt="Instagram Logo"
+              height="50px"
+              class="position-absolute start-0 ms-3"
+            /><span class="h2 mx-auto my-auto p-1">Instagram</span></a
+          >
+
+          <!-- Steam -->
+          <a
+            href="https://steamcommunity.com/id/martinfll/"
+            class="btn border rounded-3 d-flex align-items-center position-relative col p-3 link-body-emphasis"
+            target="_blank"
+            role="button"
+          >
+            <img
+              src="./assets/svg/steam-svgrepo-com.svg"
+              alt="Steam Logo"
+              height="50px"
+              class="position-absolute start-0 ms-3"
+            /><span class="h2 mx-auto my-auto p-1">Steam</span></a
+          >
+          <!-- YouTube -->
+          <a
+            href="https://www.youtube.com/@MartinFLL"
+            class="btn border rounded-3 d-flex align-items-center position-relative col p-3 link-body-emphasis"
+            target="_blank"
+            role="button"
+          >
+            <img
+              src="./assets/svg/youtube-168-svgrepo-com.svg"
+              alt="YouTube Logo"
+              height="50px"
+              class="position-absolute start-0 ms-3"
+            /><span class="h2 mx-auto my-auto p-1">YouTube</span></a
+          >
+
+          <!-- TikTok -->
+          <a
+            href="https://www.tiktok.com/@martinfll"
+            class="btn border rounded-3 d-flex align-items-center position-relative col p-3 link-body-emphasis"
+            target="_blank"
+            role="button"
+          >
+            <img
+              src="./assets/svg/tiktok-svgrepo-com.svg"
+              alt="TikTok Logo"
+              height="50px"
+              class="position-absolute start-0 ms-3"
+            /><span class="h2 mx-auto my-auto p-1">TikTok</span></a
+          >
+
+          <!-- E-mail -->
+          <a
+            href="mailto:contacto@martinfll.cl"
+            class="btn border rounded-3 d-flex align-items-center position-relative col p-3 link-body-emphasis"
+            role="button"
+          >
+            <img
+              src="./assets/svg/email-svgrepo-com.svg"
+              alt="E-mail Icon"
+              height="50px"
+              class="position-absolute start-0 ms-3"
+            /><span class="h2 mx-auto my-auto p-1">E-mail</span></a
+          >
         </div>
 
         <!-- Footer -->
@@ -184,14 +252,9 @@
             <li class="nav-item lead">
               <a
                 href="https://github.com/MartinFLL/cl"
-                class="nav-link icon-link px-2 link-body-emphasis mt-1"
+                class="nav-link icon-link px-2 mt-1"
                 target="_blank"
-                ><img
-                  src="./assets/svg/github-142-svgrepo-com.svg"
-                  alt="GitHub Logo"
-                  class="me-1"
-                  height="21px"
-                />GitHub</a
+                >Créditos</a
               >
             </li>
           </ul>
