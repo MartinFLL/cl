@@ -30,8 +30,3 @@ body {
   -webkit-user-select: none;
   -ms-user-select: none;
 }
-
-.container-blur-black {
-  backdrop-filter: blur(50px);
-  background-color: rgba(0, 0, 0, 0.85);
-}
