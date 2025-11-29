@@ -19,8 +19,6 @@
       <div class="px-4 py-3 text-center rounded-5 shadow-lg border bg-black">
         <!-- Header -->
         <nav class="d-flex justify-content-end">
-
-
           <!-- Dropdown Top Right -->
           <div class="dropdown">
             <button
@@ -248,18 +246,78 @@
           <ul
             class="nav justify-content-sm-end justify-content-center border-top"
           >
-            <!-- Créditos -->
+            <!-- Botón Créditos -->
             <li class="nav-item lead">
               <a
-                href="/credits/"
-                class="nav-link icon-link px-2 mt-1 disabled"
+                href=""
+                class="nav-link icon-link px-2 mt-1 pb-1 position-relative"
                 target="_blank"
-                >Créditos</a
-              >
+                data-bs-toggle="modal"
+                data-bs-target="#creditsModal"
+                >Créditos
+              </a>
             </li>
           </ul>
         </footer>
       </div>
+
+      <!-- Modal Créditos -->
+      <aside>
+        <div
+          class="modal fade"
+          id="creditsModal"
+          tabindex="-1"
+          aria-labelledby="creditsModal"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg modal-fullscreen-md-down">
+            <div class="modal-content">
+              <div class="modal-header">
+                <!-- Título del modal -->
+                <h1 class="modal-title fs-5" id="creditsModal">Créditos</h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <!-- Modal Body -->
+              <div class="modal-body p-0 m-0">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    <a href="https://www.svgrepo.com/"
+                      >https://www.svgrepo.com/</a
+                    >
+                    - Iconos de redes sociales
+                  </li>
+                  <li class="list-group-item">
+                    <a href="https://portfolio.busybox.colabois.fr/"
+                      >https://portfolio.busybox.colabois.fr/</a
+                    >
+                    - Insignia de verificación nerd
+                  </li>
+                  <li class="list-group-item">
+                    Frostnite (Fortnite: Salva el mundo) - Fondo de la página
+                  </li>
+                </ul>
+              </div>
+              <div class="modal-footer">
+                <p>
+                  Hecho con <a href="https://getbootstrap.com/">Bootstrap</a>
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
     </main>
     <!-- Bootstrap JS -->
     <script
